@@ -45,6 +45,7 @@ namespace Exchange_rate_management_system
                             Console.WriteLine($"{currencyCode[currencyIndex]}");
                             notFound = false;
                         }
+                    }
 
                         if (notFound)
                         {
@@ -77,7 +78,6 @@ namespace Exchange_rate_management_system
                             Console.WriteLine("Seçdiyiniz məzənnə tapılmadı");
                         }
                     }
-                }
                 else if (requiredCurrencyCode == "/exit")
                 {
                     Console.WriteLine("Proqramımızdan istifadə etdiyiniz üçün təşəkkür edirik!");
