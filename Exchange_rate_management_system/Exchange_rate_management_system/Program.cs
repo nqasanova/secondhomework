@@ -49,16 +49,16 @@ namespace Exchange_rate_management_system
 
                         if (notFound)
                         {
-                            Console.WriteLine("Daxil etdiyiniz məzənnə tapılmadı");
+                            Console.WriteLine("Not found, try another currency.");
                         }
                     }
 
                     else if (requiredCurrencyCode == "/calculate-amount-by-currency")
                     {
-                        Console.WriteLine("Məbləği daxil edin : ");
+                        Console.WriteLine("Enter the amount : ");
                         double amount = Convert.ToDouble(Console.ReadLine());
 
-                        Console.WriteLine("Məzənnəni seçin : ");
+                        Console.WriteLine("Please select the currency : ");
 
                         string selectedCode = Console.ReadLine();
 
@@ -75,12 +75,12 @@ namespace Exchange_rate_management_system
 
                         if (notFound)
                         {
-                            Console.WriteLine("Seçdiyiniz məzənnə tapılmadı");
+                            Console.WriteLine("Not found, try another currency.");
                         }
                     }
                 else if (requiredCurrencyCode == "/exit")
                 {
-                    Console.WriteLine("Proqramımızdan istifadə etdiyiniz üçün təşəkkür edirik!");
+                    Console.WriteLine("Thank you for using our program!");
                     break;
                 }
                 Console.ReadLine();
