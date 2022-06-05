@@ -81,9 +81,9 @@ namespace Exchange_rate_management_system
                 else if (requiredCurrencyCode == "/exit")
                 {
                     Console.WriteLine("Thank you for using our program!");
+                    break;
                 }
                 Console.ReadLine();
-                break;
             }
         }
     }
