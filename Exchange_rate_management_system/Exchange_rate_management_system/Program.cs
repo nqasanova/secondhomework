@@ -52,7 +52,7 @@ namespace Exchange_rate_management_system
                         }
                     }
 
-                    if (requiredCurrencyCode == "/calculate-amount-by-currency")
+                    else if (requiredCurrencyCode == "/calculate-amount-by-currency")
                     {
                         Console.WriteLine("Məbləği daxil edin : ");
                         double amount = Convert.ToDouble(Console.ReadLine());
